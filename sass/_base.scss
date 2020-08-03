@@ -1,0 +1,34 @@
+//variables
+//colors
+
+$color-primary: #2193B0;
+$color-primary-light: #6DD5ED;
+$color-primary-light-2: #00C0EC;
+
+$color-secondary: #78E08F;
+$color-secondary-light: #94EBA7;
+$color-secondary-dark: #6FCF84;
+
+$color-grey: #E0E0E0;
+$color-grey-light: #ecf0f1;
+
+$color-green: #13990A;
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    display: grid;
+    grid-template-rows: min-content min-content min-content repeat(3, 100px);
+}

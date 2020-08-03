@@ -1,0 +1,22 @@
+%heading {
+    text-transform: uppercase;
+    color: $color-primary-light-2;
+    font-weight: normal;
+}
+
+
+.heading-1 {
+    @extend %heading;
+    font-size: 7rem;
+}
+
+.heading-2 {
+    @extend %heading;
+    font-size: 4.5rem;
+}
+
+.heading-3 {
+    color: $color-primary-light-2;
+    font-weight: 800;
+    font-size: 4rem;
+}

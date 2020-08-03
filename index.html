@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dra. Virginia Bazan</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <header class="header">
+            <div class="navbar">
+                <span class="navbar__nombre">Dra. Virginia Bazán</span>
+                <div class="navbar__buttons">
+                    <a href="#ubicacion" class="navbar__btn">Ubicación</a>
+                    <a href="#info" class="navbar__btn">La Doctora</a>
+                    <a href="#contacto" class="navbar__btn">Contacto</a>
+                </div>
+            </div>
+            <div></div>  <!-- gutter -->
+            <div class="telefono">
+                <span class="telefono__texto">Turnos al:</span>
+                <a href="tel:+541144875240" class="telefono__numero">011 4487-5240</a>
+            </div>
+            <div class="heading">
+                <h1 class="heading-1">Virginia Bazan</h1>
+                <h2 class="heading-2">Medica Pediatra</h2>
+            </div>
+        </header>
+        <div class="horarios">
+            <h3 class="heading-3 horarios__heading">Horarios:</h3>
+            <p class="horarios__dias">Lunes, miércoles y viernes: <span class="horarios__horas">9:00hs a 15:00hs</span></p>
+            <p class="horarios__dias">Jueves: <span class="horarios__horas">12:00hs a 16:00hs</span></p>
+            <p class="horarios__dias">Sábados: <span class="horarios__horas">10:00hs a 12:00hs</span></p>
+            <p class="horarios__aclaracion">Solicitar Turnos</p>
+        </div>
+        <div class="ubicacion" id="ubicacion">
+            <h3 class="ubicacion__heading heading-3">Ubicación:</h3>
+            <div class="ubicacion__mapa"></div>
+            <p class="ubicacion__texto">
+                El Guayacán entre El Cisne y El Leñatero <br>
+                <span class="ubicacion__texto--direccion">Ciudad Evita, La Matanza, Buenos Aires</span><br>
+                Circunscripción 1º Sección 1º Manzana 3 Edificio 2 <br>
+                PB, Departamento 2
+            </p>
+        </div>
+        <div class="info"></div>
+        <div class="contacto"></div>
+        <footer class="footer"></footer>
+
+        <script src="script.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD1algaRD0m0YDeWr9TFIdNlezeHt36s4E&callback=initMap"></script>
+    </body>
+</html>

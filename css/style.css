@@ -1,0 +1,144 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Poppins', sans-serif;
+  display: grid;
+  grid-template-rows: min-content min-content min-content repeat(3, 100px); }
+
+.contacto {
+  background-color: #E0E0E0; }
+
+.header {
+  display: grid;
+  grid-template-rows: 9rem 3rem 6rem min-content; }
+  .header .navbar {
+    background-image: linear-gradient(90deg, #2193B0 0%, #6DD5ED 100%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .header .navbar__nombre {
+      font-weight: 800;
+      font-size: 3rem;
+      color: #fff;
+      margin-left: 3rem; }
+    .header .navbar__buttons {
+      display: flex;
+      justify-content: space-around;
+      margin-right: 2rem; }
+    .header .navbar__btn:link, .header .navbar__btn:visited {
+      text-decoration: none;
+      color: #fff;
+      font-weight: 800;
+      font-size: 2rem;
+      margin: 0 1rem;
+      transition: all .2s; }
+    .header .navbar__btn:hover {
+      color: #ecf0f1; }
+  .header .telefono {
+    background-image: linear-gradient(90deg, #78E08F 0%, #94EBA7 100%);
+    grid-row: 3 / 4;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .header .telefono__texto {
+      font-size: 3rem;
+      color: #fff; }
+    .header .telefono__numero:link, .header .telefono__numero:visited {
+      color: #fff;
+      font-size: 3rem;
+      font-weight: bold;
+      padding: .2rem .8rem;
+      background-color: #94EBA7;
+      border: 1px solid #6FCF84;
+      border-radius: 10px;
+      margin-left: 1rem;
+      transition: all .2s; }
+    .header .telefono__numero:hover {
+      transform: translateY(-1px);
+      background-color: #78E08F;
+      box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.2); }
+    .header .telefono__numero:active {
+      transform: translateY(0px);
+      background-color: #94EBA7;
+      box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.2); }
+  .header .heading {
+    text-align: center;
+    margin: 3rem 0; }
+
+.horarios {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  padding: 5rem 0;
+  background-color: #E0E0E0; }
+  .horarios__heading {
+    grid-column: 2 / 4; }
+  .horarios__dias {
+    grid-column: 3 / -1;
+    font-size: 3rem;
+    font-weight: 500;
+    line-height: 6rem;
+    text-align: left; }
+  .horarios__horas {
+    font-weight: normal; }
+  .horarios__aclaracion {
+    grid-column: 1 / -1;
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 1rem; }
+
+.info {
+  background-color: #E0E0E0; }
+
+.heading-1, .heading-2 {
+  text-transform: uppercase;
+  color: #00C0EC;
+  font-weight: normal; }
+
+.heading-1 {
+  font-size: 7rem; }
+
+.heading-2 {
+  font-size: 4.5rem; }
+
+.heading-3 {
+  color: #00C0EC;
+  font-weight: 800;
+  font-size: 4rem; }
+
+.ubicacion {
+  display: grid;
+  flex-direction: column;
+  align-items: center;
+  padding: 5rem 0;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(3, min-content);
+  grid-gap: 2rem; }
+  .ubicacion__heading {
+    align-self: flex-start;
+    grid-row: 1 / 2;
+    grid-column: 2 / -1; }
+  .ubicacion__mapa {
+    grid-column: 1 / -1;
+    margin: 0 auto;
+    width: 80%;
+    height: 80vh;
+    grid-row: 2 / 3; }
+  .ubicacion__texto {
+    grid-row: 3 / 4;
+    grid-column: 1 / -1;
+    margin-top: 4.5rem;
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 4rem; }
+    .ubicacion__texto--direccion {
+      grid-column: 1 / -1;
+      font-size: 3.5rem; }

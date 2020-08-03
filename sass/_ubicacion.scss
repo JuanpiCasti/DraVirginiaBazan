@@ -1,0 +1,37 @@
+.ubicacion {
+    display: grid;
+    flex-direction: column;
+    align-items: center;
+    padding: 5rem 0;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(3, min-content);
+    grid-gap: 2rem;
+    &__heading {
+        align-self: flex-start;
+        grid-row: 1 / 2;
+        grid-column: 2 / -1;
+    }
+    
+    &__mapa {
+        grid-column: 1 / -1;
+        margin: 0 auto;
+        width: 80%;
+        height: 80vh;
+        grid-row: 2 / 3;
+    }
+    
+    &__texto {
+        grid-row: 3 / 4;
+        grid-column: 1 / -1;
+        margin-top: 4.5rem;
+        text-align: center;
+        font-size: 1.5rem;
+        line-height: 4rem;
+        
+        &--direccion {
+            grid-column: 1 / -1;
+            font-size: 3.5rem;
+        }
+    }
+
+}

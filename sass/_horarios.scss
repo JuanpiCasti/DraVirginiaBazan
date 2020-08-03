@@ -1,0 +1,29 @@
+.horarios {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    padding: 5rem 0;
+    background-color: $color-grey;
+
+    &__heading {
+        grid-column: 2 / 4;
+    }
+
+    &__dias {
+        grid-column: 3 / -1;
+        font-size: 3rem;
+        font-weight: 500;
+        line-height: 6rem;
+        text-align: left;
+    }
+
+    &__horas {
+        font-weight: normal;
+    }
+    
+    &__aclaracion {
+        grid-column: 1 / -1;
+        font-size: 2rem;
+        text-align: center;
+        margin-top: 1rem;
+    }
+}
