@@ -16,6 +16,18 @@ body {
 
 .contacto {
   background-color: orangered; }
+  .contacto__form {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(2, min-content);
+    grid-gap: 1.5rem; }
+  .contacto__email {
+    grid-column: 3 / 6; }
+  .contacto__nombre {
+    grid-column: 6 / 9; }
+  .contacto__correo {
+    grid-row: 2 / 3;
+    grid-column: 3 / 9; }
 
 .header {
   display: grid;
@@ -89,8 +101,8 @@ body {
   .info__foto {
     grid-column: 6 / 10;
     background-color: orange;
-    width: 500px;
-    height: 500px; }
+    width: 50rem;
+    height: 50rem; }
 
 .heading-1, .heading-2 {
   text-transform: uppercase;

@@ -1,3 +1,23 @@
 .contacto {
     background-color: orangered;
+
+    &__form {
+        display: grid;
+        grid-template-columns: repeat(10, 1fr);
+        grid-template-rows: repeat(2, min-content);
+        grid-gap: 1.5rem;
+    }
+
+    &__email {
+        grid-column: 3 / 6;
+    }
+
+    &__nombre {
+        grid-column: 6 / 9;
+    }
+
+    &__correo {
+        grid-row: 2 / 3;
+        grid-column: 3 / 9;
+    }
 }
