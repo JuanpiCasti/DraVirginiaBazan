@@ -12,47 +12,24 @@ html {
 body {
   font-family: 'Poppins', sans-serif;
   display: grid;
-  grid-template-rows: min-content min-content min-content repeat(3, 100px); }
+  grid-template-rows: min-content min-content min-content 70rem repeat(2, 100px); }
 
 .contacto {
-  background-color: #E0E0E0; }
+  background-color: orangered; }
 
 .header {
   display: grid;
   grid-template-rows: 9rem 3rem 6rem min-content; }
-  .header .navbar {
-    background-image: linear-gradient(90deg, #2193B0 0%, #6DD5ED 100%);
-    display: flex;
-    justify-content: space-between;
-    align-items: center; }
-    .header .navbar__nombre {
-      font-weight: 800;
-      font-size: 3rem;
-      color: #fff;
-      margin-left: 3rem; }
-    .header .navbar__buttons {
-      display: flex;
-      justify-content: space-around;
-      margin-right: 2rem; }
-    .header .navbar__btn:link, .header .navbar__btn:visited {
-      text-decoration: none;
-      color: #fff;
-      font-weight: 800;
-      font-size: 2rem;
-      margin: 0 1rem;
-      transition: all .2s; }
-    .header .navbar__btn:hover {
-      color: #ecf0f1; }
-  .header .telefono {
+  .header__telefono {
     background-image: linear-gradient(90deg, #78E08F 0%, #94EBA7 100%);
     grid-row: 3 / 4;
     display: flex;
     justify-content: center;
     align-items: center; }
-    .header .telefono__texto {
+    .header__telefono--texto {
       font-size: 3rem;
       color: #fff; }
-    .header .telefono__numero:link, .header .telefono__numero:visited {
+    .header__telefono--numero:link, .header__telefono--numero:visited {
       color: #fff;
       font-size: 3rem;
       font-weight: bold;
@@ -62,15 +39,15 @@ body {
       border-radius: 10px;
       margin-left: 1rem;
       transition: all .2s; }
-    .header .telefono__numero:hover {
+    .header__telefono--numero:hover {
       transform: translateY(-1px);
       background-color: #78E08F;
       box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.2); }
-    .header .telefono__numero:active {
+    .header__telefono--numero:active {
       transform: translateY(0px);
       background-color: #94EBA7;
       box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.2); }
-  .header .heading {
+  .header__heading {
     text-align: center;
     margin: 3rem 0; }
 
@@ -78,7 +55,7 @@ body {
   display: grid;
   grid-template-columns: repeat(10, 1fr);
   padding: 5rem 0;
-  background-color: #E0E0E0; }
+  background-color: #f5f5f5; }
   .horarios__heading {
     grid-column: 2 / 4; }
   .horarios__dias {
@@ -96,7 +73,24 @@ body {
     margin-top: 1rem; }
 
 .info {
-  background-color: #E0E0E0; }
+  background-color: #f5f5f5;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(2, min-content);
+  grid-gap: 2rem;
+  padding: 5rem 0;
+  align-items: center; }
+  .info__heading {
+    grid-column: 2 / 6; }
+  .info__content {
+    grid-column: 2 / 6; }
+    .info__content--texto {
+      font-size: 1.6rem; }
+  .info__foto {
+    grid-column: 6 / 10;
+    background-color: orange;
+    width: 500px;
+    height: 500px; }
 
 .heading-1, .heading-2 {
   text-transform: uppercase;
@@ -142,3 +136,27 @@ body {
     .ubicacion__texto--direccion {
       grid-column: 1 / -1;
       font-size: 3.5rem; }
+
+.navbar {
+  background-image: linear-gradient(90deg, #2193B0 0%, #6DD5ED 100%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .navbar__nombre {
+    font-weight: 800;
+    font-size: 3rem;
+    color: #fff;
+    margin-left: 3rem; }
+  .navbar__buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-right: 2rem; }
+  .navbar__btn:link, .navbar__btn:visited {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 800;
+    font-size: 2rem;
+    margin: 0 1rem;
+    transition: all .2s; }
+  .navbar__btn:hover {
+    color: #ecf0f1; }
