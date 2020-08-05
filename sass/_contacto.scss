@@ -1,10 +1,20 @@
 .contacto {
-    background-color: orangered;
-
+    background-color: $color-grey;
+    align-self: center;
+    padding: 5rem 0;
+    padding-top: 1rem;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(2, min-content);
+    grid-row-gap: 4rem;
+    &__heading {
+        grid-column: 2 / -1;
+    }
     &__form {
+        grid-column: 1 / -1;
         display: grid;
         grid-template-columns: repeat(10, 1fr);
-        grid-template-rows: repeat(2, min-content);
+        grid-template-rows: min-content min-content;
         grid-gap: 1.5rem;
     }
 
@@ -19,5 +29,6 @@
     &__correo {
         grid-row: 2 / 3;
         grid-column: 3 / 9;
+        height: 30rem;
     }
 }

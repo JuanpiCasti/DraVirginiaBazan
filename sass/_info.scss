@@ -25,5 +25,11 @@
         background-color: orange;
         width: 50rem;
         height: 50rem;
+        // eliminar flex despues ya que es para el placeholder////
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        //////////////////////////////////////////////////////////.
+        
     }
 }
