@@ -7,6 +7,7 @@
     padding: 5rem 0;
     align-items: center;
 
+
     &__heading {
         grid-column: 2 / 6;
     }
@@ -14,6 +15,12 @@
     &__content {
         
         grid-column: 2 / 6;
+
+        @media only screen and (max-width: $bp-small) {
+            grid-template-rows: repeat(3, min-content);
+            grid-column: 2 / 10;
+            grid-row: 2 / 3;
+        }
 
         &--texto {
             font-size: 1.6rem;
@@ -23,13 +30,20 @@
     &__foto {
         grid-column: 6 / 10;
         background-color: orange;
-        width: 50rem;
-        height: 50rem;
+        width: 100%;
+        height: auto;
         // eliminar flex despues ya que es para el placeholder////
         display: flex;
         justify-content: center;
         align-items: center;
         //////////////////////////////////////////////////////////.
+
+        @media only screen and (max-width: $bp-small) {
+            grid-column: 1 / -1;
+            margin: 0 auto;
+            grid-row: 3 / 4;
+            width: 30%;
+        }
         
     }
 }

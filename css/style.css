@@ -8,11 +8,20 @@
 html {
   font-size: 62.5%;
   box-sizing: border-box; }
+  @media only screen and (max-width: 66.25em) {
+    html {
+      font-size: 50%; } }
+  @media only screen and (max-width: 53.125em) {
+    html {
+      font-size: 37.5%; } }
 
 body {
   font-family: 'Poppins', sans-serif;
   display: grid;
-  grid-template-rows: min-content min-content min-content 70rem min-content repeat(1, 100px); }
+  grid-template-rows: min-content min-content min-content 70rem min-content 15rem repeat(1, 100px); }
+  @media only screen and (max-width: 40.625em) {
+    body {
+      grid-template-rows: min-content min-content min-content min-content min-content 15rem repeat(1, 100px); } }
 
 .contacto {
   background-color: #f5f5f5;
@@ -21,7 +30,7 @@ body {
   padding-top: 1rem;
   display: grid;
   grid-template-columns: repeat(10, 1fr);
-  grid-template-rows: repeat(2, min-content);
+  grid-template-rows: repeat(3, min-content);
   grid-row-gap: 4rem; }
   .contacto__heading {
     grid-column: 2 / -1; }
@@ -29,16 +38,55 @@ body {
     grid-column: 1 / -1;
     display: grid;
     grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: min-content min-content;
+    grid-template-rows: repeat(3, min-content);
     grid-gap: 1.5rem; }
+    @media only screen and (max-width: 40.625em) {
+      .contacto__form {
+        grid-template-rows: repeat(4, min-content); } }
   .contacto__email {
-    grid-column: 3 / 6; }
+    grid-column: 3 / 6;
+    border-radius: 3px;
+    font-size: 1.6rem;
+    font-family: Poppins; }
+    @media only screen and (max-width: 40.625em) {
+      .contacto__email {
+        grid-column: 2 / 10; } }
   .contacto__nombre {
-    grid-column: 6 / 9; }
+    grid-column: 6 / 9;
+    border-radius: 3px;
+    font-size: 1.6rem;
+    font-family: Poppins; }
+    @media only screen and (max-width: 40.625em) {
+      .contacto__nombre {
+        grid-row: 2 / 3;
+        grid-column: 2 / 10; } }
   .contacto__correo {
     grid-row: 2 / 3;
     grid-column: 3 / 9;
-    height: 30rem; }
+    height: 30rem;
+    border-radius: 3px;
+    padding: 2rem;
+    font-family: Poppins; }
+    @media only screen and (max-width: 40.625em) {
+      .contacto__correo {
+        grid-row: 3 / 4;
+        grid-column: 2 / 10; } }
+  .contacto__submit {
+    grid-row: 3 / 4;
+    grid-column: 8 / 9;
+    font-family: poppins;
+    border-radius: 3px;
+    font-size: 1.6rem; }
+    @media only screen and (max-width: 40.625em) {
+      .contacto__submit {
+        grid-row: 4 / 5;
+        grid-column: 9 / 10;
+        font-size: 2rem; } }
+
+.footer {
+  text-align: center;
+  margin: auto;
+  font-size: 1.6rem; }
 
 .header {
   display: grid;
@@ -107,16 +155,27 @@ body {
     grid-column: 2 / 6; }
   .info__content {
     grid-column: 2 / 6; }
+    @media only screen and (max-width: 40.625em) {
+      .info__content {
+        grid-template-rows: repeat(3, min-content);
+        grid-column: 2 / 10;
+        grid-row: 2 / 3; } }
     .info__content--texto {
       font-size: 1.6rem; }
   .info__foto {
     grid-column: 6 / 10;
     background-color: orange;
-    width: 50rem;
-    height: 50rem;
+    width: 100%;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center; }
+    @media only screen and (max-width: 40.625em) {
+      .info__foto {
+        grid-column: 1 / -1;
+        margin: 0 auto;
+        grid-row: 3 / 4;
+        width: 30%; } }
 
 .heading-1, .heading-2 {
   text-transform: uppercase;
@@ -152,6 +211,9 @@ body {
     width: 80%;
     height: 80vh;
     grid-row: 2 / 3; }
+    @media only screen and (max-width: 53.125em) {
+      .ubicacion__mapa {
+        height: 40vh; } }
   .ubicacion__texto {
     grid-row: 3 / 4;
     grid-column: 1 / -1;
@@ -168,6 +230,8 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center; }
+  .navbar a {
+    text-decoration: none; }
   .navbar__nombre {
     font-weight: 800;
     font-size: 3rem;
@@ -186,3 +250,24 @@ body {
     transition: all .2s; }
   .navbar__btn:hover {
     color: #ecf0f1; }
+
+.whatsapp {
+  background-color: #f5f5f5; }
+
+.whatsappbtn {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-decoration: none;
+  color: #fff;
+  font-size: 4rem;
+  background-color: #13990A;
+  font-weight: 800;
+  width: 35.5rem;
+  border-radius: 1rem;
+  height: 10rem;
+  margin: 0 auto;
+  align-self: center; }
+  .whatsappbtn__logo {
+    width: 9rem;
+    height: 9rem; }

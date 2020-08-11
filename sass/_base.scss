@@ -14,6 +14,12 @@ $color-grey-light: #ecf0f1;
 
 $color-green: #13990A;
 
+// breakpoints
+
+$bp-large: 66.25em;
+$bp-medium: 53.125em;
+$bp-small: 40.625em;
+
 *,
 *::before,
 *::after {
@@ -25,10 +31,23 @@ $color-green: #13990A;
 html {
     font-size: 62.5%;
     box-sizing: border-box;
+
+    @media only screen and (max-width: $bp-large) {
+        font-size: 50%;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+        font-size: 37.5%;
+    }
+
 }
 
 body {
     font-family: 'Poppins', sans-serif;
     display: grid;
-    grid-template-rows: min-content min-content min-content 70rem min-content repeat(1, 100px);
+    grid-template-rows: min-content min-content min-content 70rem min-content 15rem repeat(1, 100px);
+    
+    @media only screen and (max-width: $bp-small) {
+        grid-template-rows: min-content min-content min-content min-content min-content 15rem repeat(1, 100px);
+    }
 }

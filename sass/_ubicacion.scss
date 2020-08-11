@@ -18,6 +18,9 @@
         width: 80%;
         height: 80vh;
         grid-row: 2 / 3;
+        @media only screen and (max-width: $bp-medium) {
+            height: 40vh;
+        }
     }
     
     &__texto {
