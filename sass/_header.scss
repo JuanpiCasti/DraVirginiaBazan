@@ -2,7 +2,7 @@
     display: grid;
     grid-template-rows: 9rem 3rem 6rem min-content;
 
-    @media only screen and (max-width: $bp-small) {
+    @media only screen and (max-width: $bp-smallest) {
         grid-template-rows: 0rem 3rem 6rem min-content;
     }
 
