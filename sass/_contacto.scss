@@ -29,6 +29,7 @@
         border-radius: 3px;
         font-size: 1.6rem;
         font-family: Poppins;
+        padding: .2rem;
 
         @media only screen and (max-width: $bp-small) {
 
@@ -41,10 +42,11 @@
         border-radius: 3px;
         font-size: 1.6rem;
         font-family: Poppins;
+        padding: .2rem;
 
         @media only screen and (max-width: $bp-small) {
             grid-row: 2 / 3;
-
+            width: 100%;
             grid-column: 2 / 10;
         }
     }
@@ -57,11 +59,14 @@
         padding: 2rem;
         font-family: Poppins;
 
+        box-sizing: border-box;
         
         @media only screen and (max-width: $bp-small) {
             grid-row: 3 / 4;
 
             grid-column: 2 / 10;
+            width: 100%;
+            padding: .2rem;
         }
     }
 

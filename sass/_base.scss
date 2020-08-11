@@ -19,6 +19,7 @@ $color-green: #13990A;
 $bp-large: 66.25em;
 $bp-medium: 53.125em;
 $bp-small: 40.625em;
+$bp-smallest: 28.125em;
 
 *,
 *::before,
@@ -45,9 +46,9 @@ html {
 body {
     font-family: 'Poppins', sans-serif;
     display: grid;
-    grid-template-rows: min-content min-content min-content 70rem min-content 15rem repeat(1, 100px);
+    grid-template-rows: min-content min-content min-content 70rem min-content 15rem 10rem;
     
     @media only screen and (max-width: $bp-small) {
-        grid-template-rows: min-content min-content min-content min-content min-content 15rem repeat(1, 100px);
+        grid-template-rows: min-content min-content min-content min-content min-content 15rem 5rem;
     }
 }

@@ -14,6 +14,16 @@
         font-weight: 500;
         line-height: 6rem;
         text-align: left;
+
+        @media only screen and (max-width: $bp-small) {
+            grid-column: 2 / -1;
+        }
+
+        @media only screen and (max-width: $bp-smallest) {
+            font-size: 2rem;
+        }
+
+        
     }
 
     &__horas {
