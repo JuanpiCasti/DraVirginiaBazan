@@ -15,7 +15,7 @@
         line-height: 6rem;
         text-align: left;
 
-        @media only screen and (max-width: $bp-small) {
+        @media only screen and (max-width: $bp-medium) {
             grid-column: 2 / -1;
         }
 
