@@ -5,3 +5,16 @@ function initMap() {
     );
     let marker = new google.maps.Marker({position: uluru, map: map});
 };
+
+/// BURGER MENU
+
+const burger = document.querySelector(".burger");
+const slider = document.querySelector(".slider");
+const sliderButtons = document.querySelectorAll(".slider__btn");
+
+function toggleMenu() {
+    slider.classList.toggle("slider--active");
+}
+
+burger.addEventListener("click", toggleMenu);
+sliderButtons.forEach(e => e.addEventListener("click", toggleMenu));

@@ -2,9 +2,6 @@
     display: grid;
     grid-template-rows: 9rem 3rem 6rem min-content;
 
-    @media only screen and (max-width: $bp-smallest) {
-        grid-template-rows: 0rem 3rem 6rem min-content;
-    }
 
     &__telefono {
         background-image: linear-gradient(90deg, $color-secondary 0%, $color-secondary-light 100%);
@@ -56,10 +53,6 @@
     justify-content:space-between;
     align-items: center;
 
-    @media only screen and (max-width: $bp-smallest) {
-        opacity: 0;
-
-    }
 
     a {
         text-decoration: none;
@@ -76,6 +69,10 @@
         display: flex;
         justify-content: space-around;
         margin-right: 2rem;
+
+        @media only screen and (max-width: $bp-smallest) {
+            display: none;
+        }
     }
 
     &__btn:link,

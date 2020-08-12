@@ -6,72 +6,81 @@
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800&display=swap" rel="stylesheet">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="UTF-8">
+        <script src="https://kit.fontawesome.com/fe5febd703.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        <header class="header">
-            <div class="navbar">
-                <a href="index.html"><span class="navbar__nombre">Dra. Virginia Bazán</span>    </a>
-                <div class="navbar__buttons">
-                    <a href="#ubicacion" class="navbar__btn">Ubicación</a>
-                    <a href="#info" class="navbar__btn">La Doctora</a>
-                    <a href="#contacto" class="navbar__btn">Contacto</a>
+        <div class="slider">
+            <a href="#ubicacion" class="slider__btn">Ubicación</a>
+            <a href="#info" class="slider__btn">La Doctora</a>
+            <a href="#contacto" class="slider__btn">Contacto</a>
+        </div>
+        <span class="burger"><i class="fas fa-bars"></i></span>
+        <main>
+            <header class="header">
+                <div class="navbar">
+                    <a href="index.html"><span class="navbar__nombre">Dra. Virginia Bazán</span>    </a>
+                    <div class="navbar__buttons">
+                        <a href="#ubicacion" class="navbar__btn">Ubicación</a>
+                        <a href="#info" class="navbar__btn">La Doctora</a>
+                        <a href="#contacto" class="navbar__btn">Contacto</a>
+                    </div>
                 </div>
+                <div></div>  <!-- gutter -->
+                <div class="header__telefono">
+                    <span class="header__telefono--texto">Turnos al:</span>
+                    <a href="tel:+541144875240" class="header__telefono--numero">011 4487-5240</a>
+                </div>
+                <div class="header__heading">
+                    <h1 class="heading-1">Virginia Bazan</h1>
+                    <h2 class="heading-2">Medica Pediatra</h2>
+                </div>
+            </header>
+            <div class="horarios">
+                <h3 class="heading-3 horarios__heading">Horarios:</h3>
+                <p class="horarios__dias">Lunes, miércoles y viernes: <span class="horarios__horas">9:00hs a 15:00hs</span></p>
+                <p class="horarios__dias">Jueves: <span class="horarios__horas">12:00hs a 16:00hs</span></p>
+                <p class="horarios__dias">Sábados: <span class="horarios__horas">10:00hs a 12:00hs</span></p>
+                <p class="horarios__aclaracion">Solicitar Turnos</p>
             </div>
-            <div></div>  <!-- gutter -->
-            <div class="header__telefono">
-                <span class="header__telefono--texto">Turnos al:</span>
-                <a href="tel:+541144875240" class="header__telefono--numero">011 4487-5240</a>
+            <div class="ubicacion" id="ubicacion">
+                <div class="ubicacion__mapa"></div>
+                <p class="ubicacion__texto">
+                    El Guayacán entre El Cisne y El Leñatero <br>
+                    <span class="ubicacion__texto--direccion">Ciudad Evita, La Matanza, Buenos Aires</span><br>
+                    Circunscripción 1º Sección 1º Manzana 3 Edificio 2 <br>
+                    PB, Departamento 2
+                </p>
             </div>
-            <div class="header__heading">
-                <h1 class="heading-1">Virginia Bazan</h1>
-                <h2 class="heading-2">Medica Pediatra</h2>
+            <div class="info" id="info">
+                <h3 class="heading-3 info__heading">La doctora:</h3>
+                <div class="info__content">
+                
+                    <p class="info__content--texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <br>
+                    <p class="info__content--texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+                <img class="info__foto" src="img/placeholder.jpg">
             </div>
-        </header>
-        <div class="horarios">
-            <h3 class="heading-3 horarios__heading">Horarios:</h3>
-            <p class="horarios__dias">Lunes, miércoles y viernes: <span class="horarios__horas">9:00hs a 15:00hs</span></p>
-            <p class="horarios__dias">Jueves: <span class="horarios__horas">12:00hs a 16:00hs</span></p>
-            <p class="horarios__dias">Sábados: <span class="horarios__horas">10:00hs a 12:00hs</span></p>
-            <p class="horarios__aclaracion">Solicitar Turnos</p>
-        </div>
-        <div class="ubicacion" id="ubicacion">
-            <div class="ubicacion__mapa"></div>
-            <p class="ubicacion__texto">
-                El Guayacán entre El Cisne y El Leñatero <br>
-                <span class="ubicacion__texto--direccion">Ciudad Evita, La Matanza, Buenos Aires</span><br>
-                Circunscripción 1º Sección 1º Manzana 3 Edificio 2 <br>
-                PB, Departamento 2
-            </p>
-        </div>
-        <div class="info" id="info">
-            <h3 class="heading-3 info__heading">La doctora:</h3>
-            <div class="info__content">
-            
-                <p class="info__content--texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                <br>
-                <p class="info__content--texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <div class="contacto" id="contacto">
+                <h3 class="heading-3 contacto__heading">
+                    Contacto:
+                </h3>
+                <form action="https://mailthis.to/juanpablocastiglione01@gmail.com" class="contacto__form" method="POST">
+                    <input type="text" class="contacto__email" name="_replyto" placeholder="Tu email">
+                    <input type="text" class="contacto__nombre" name="name" placeholder="Tu nombre">
+                    <textarea type="email" class="contacto__correo" name="message" placeholder="Escribí tu mensaje..."></textarea>
+                    <input type="submit" value="Enviar" class="contacto__submit">
+                </form>
             </div>
-            <img class="info__foto" src="img/placeholder.jpg">
-        </div>
-        <div class="contacto" id="contacto">
-            <h3 class="heading-3 contacto__heading">
-                Contacto:
-            </h3>
-            <form action="https://mailthis.to/juanpablocastiglione01@gmail.com" class="contacto__form" method="POST">
-                <input type="text" class="contacto__email" name="_replyto" placeholder="Tu email">
-                <input type="text" class="contacto__nombre" name="name" placeholder="Tu nombre">
-                <textarea type="email" class="contacto__correo" name="message" placeholder="Escribí tu mensaje..."></textarea>
-                <input type="submit" value="Enviar" class="contacto__submit">
-            </form>
-        </div>
-        <div class="whatsapp">
-            <a href="https://wa.link/wxy4o5" class="whatsappbtn"><img src="img/whatsapp-icon.png" alt="Enviar whatsapp" class="whatsappbtn__logo"><span class="whatsappbtn__text">WhatsApp</span></a>
-        </div>
-        <footer class="footer">
-            <p>Diseñado por Juan Pablo Castiglione: juanpablocastiglione01@gmail.com</p>
-        </footer>
-
-        <script src="script.js"></script>
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD1algaRD0m0YDeWr9TFIdNlezeHt36s4E&callback=initMap"></script>
+            <div class="whatsapp">
+                <a href="https://wa.link/wxy4o5" class="whatsappbtn"><img src="img/whatsapp-icon.png" alt="Enviar whatsapp" class="whatsappbtn__logo"><span class="whatsappbtn__text">WhatsApp</span></a>
+            </div>
+            <footer class="footer">
+                <p>Diseñado por Juan Pablo Castiglione: juanpablocastiglione01@gmail.com</p>
+            </footer>
+    
+            <script src="script.js"></script>
+            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD1algaRD0m0YDeWr9TFIdNlezeHt36s4E&callback=initMap"></script>
+        </main>
     </body>
 </html>

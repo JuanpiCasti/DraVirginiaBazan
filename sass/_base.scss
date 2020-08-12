@@ -45,6 +45,9 @@ html {
 
 body {
     font-family: 'Poppins', sans-serif;
+}
+
+main {
     display: grid;
     grid-template-rows: min-content min-content min-content 70rem min-content 15rem 10rem;
     
