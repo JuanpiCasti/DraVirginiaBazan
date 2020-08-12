@@ -25,14 +25,13 @@
     
     &__texto {
         grid-row: 3 / 4;
-        grid-column: 1 / -1;
+        grid-column: 2 / 10;
         margin-top: 4.5rem;
         text-align: center;
         font-size: 1.5rem;
         line-height: 4rem;
         
         &--direccion {
-            grid-column: 1 / -1;
             font-size: 3.5rem;
         }
     }

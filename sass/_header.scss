@@ -49,4 +49,47 @@
         margin: 3rem 0;
 
     }
+
+    .navbar {
+    background-image: linear-gradient(90deg, $color-primary 0%, $color-primary-light 100%);
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+
+    @media only screen and (max-width: $bp-smallest) {
+        opacity: 0;
+
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    &__nombre {
+        font-weight: 800;
+        font-size: 3rem;
+        color: #fff;
+        margin-left: 3rem;
+    }
+
+    &__buttons {
+        display: flex;
+        justify-content: space-around;
+        margin-right: 2rem;
+    }
+
+    &__btn:link,
+    &__btn:visited {
+        text-decoration: none;
+        color: #fff;
+        font-weight: 800;
+        font-size: 2rem;
+        margin: 0 1rem;
+        transition: all .2s;
+    }
+
+    &__btn:hover{
+        color: $color-grey-light;
+    }
+}
 }
